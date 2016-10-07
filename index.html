@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Assignment2</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="CS1520_Assignment2 10-06-2016">
+    <meta name="author" content="Siming Zheng">
+    <link rel="stylesheet" href="./CSS/test.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./JS/myscript.js"></script>
+    <link rel="stylesheet" href="./CSS/mystyle.css">
+  </head>
+  <body>
+    <form id="form1">
+      <fieldset>
+        <legend>Information</legend>
+        <div>
+          <p>
+            User Name:<input type="text" name="name" pattern="[a-zA-Z0-9]"> 
+          </p> 
+          <p id="name_error" class="error"></p>
+          <br>
+        </div>
+
+        <div>
+          <p>
+            Password:<input type="password" name="psw" pattern=".{5,10}" id="pswd"> 
+          </p> 
+          <p id="password_error" class="error"></p>
+          <br>
+        </div>
+
+        <div>
+          <label>
+             Male<input type="radio" name="gender">
+          </label>
+          <label>
+             Female<input type="radio" name="gender">
+          </label>
+          <p id="gender_error" class="error"></p>
+        </div>
+        
+        <div>
+          <p>
+            Image:<input type="file" name="img" accept="image/*" id="inputImg1"/>
+          </p>
+        </div>
+        
+        <button type="button" onclick="test_submit()">Submit</button>
+        <input type="reset" name="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
